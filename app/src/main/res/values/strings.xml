@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RegForm with DB</string>
+    <string name="register_now"><u>Register Now</u></string>
+</resources>

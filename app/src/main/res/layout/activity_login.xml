@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_back"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.RegActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@color/black"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/domine"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/email_EdtTxt_Log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_txt_bg"
+                android:drawableLeft="@drawable/mail_drawable"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/domine"
+                android:hint="Enter your Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/pass_EdtTxt_Log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_txt_bg"
+                android:drawableLeft="@drawable/pass_back"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/domine"
+                android:hint="Enter your Password"
+                android:inputType="textWebPassword"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/login_Btn_Log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/domine"
+                android:text="Login"
+                android:textAllCaps="true"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not yet registered ?"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/RegisterNowTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_now"
+        android:padding="3dp"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
