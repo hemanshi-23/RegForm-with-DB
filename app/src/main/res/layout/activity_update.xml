@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#D3D4E5"
     android:gravity="center"
-    android:background="@drawable/reg_back"
-    tools:context=".Activity.RegActivity">
+    tools:context=".Activity.UpdateActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -28,14 +28,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/domine"
-                android:text="Registration"
+                android:text="Update Details"
                 android:textAlignment="center"
                 android:textColor="@color/blue"
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/name_EdtTxt_Reg"
+                android:id="@+id/name_EdtTxt_Update"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edit_txt_bg"
@@ -45,7 +45,6 @@
                 android:inputType="textPersonName"
                 android:drawablePadding="10dp"
                 android:paddingTop="10dp"
-                android:hint="Enter your Name"
                 android:paddingBottom="10dp"
                 android:textSize="20dp"
                 android:layout_marginTop="30dp"
@@ -54,7 +53,7 @@
                 android:scrollbars="horizontal"/>
 
             <EditText
-                android:id="@+id/email_EdtTxt_Reg"
+                android:id="@+id/email_EdtTxt_Update"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edit_txt_bg"
@@ -64,13 +63,12 @@
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/domine"
                 android:paddingTop="10dp"
-                android:hint="Enter your Email"
                 android:paddingBottom="10dp"
                 android:textSize="20dp"
                 android:layout_marginTop="15dp"/>
 
             <EditText
-                android:id="@+id/pass_EdtTxt_Reg"
+                android:id="@+id/pass_EdtTxt_Update"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edit_txt_bg"
@@ -82,32 +80,22 @@
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/domine"
                 android:paddingTop="10dp"
-                android:hint="Enter your Password"
                 android:paddingBottom="10dp"
                 android:textSize="20dp"
                 android:layout_marginTop="15dp"/>
-            
+
             <Button
-                android:id="@+id/submit_Btn_Reg"
+                android:id="@+id/Update_Btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Submit"
+                android:text="Update"
                 android:fontFamily="@font/domine"
                 android:textAllCaps="true"
                 android:textSize="20dp"/>
-            
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:orientation="horizontal">
-
-
-    </LinearLayout>
 
 </LinearLayout>

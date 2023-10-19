@@ -13,6 +13,12 @@
         android:theme="@style/Theme.RegFormWithDB"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ShowDataActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.LoginSucessActivity"
             android:exported="false" />
         <activity
@@ -27,7 +33,7 @@
         </activity>
         <activity
             android:name=".Activity.RegActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

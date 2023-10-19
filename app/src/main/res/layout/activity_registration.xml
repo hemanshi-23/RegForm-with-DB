@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/reg_back"
+    tools:context=".Activity.RegActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/domine"
+                android:text="Registration"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_EdtTxt_Reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_txt_bg"
+                android:drawableLeft="@drawable/profile_drawable"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/domine"
+                android:inputType="textPersonName"
+                android:drawablePadding="10dp"
+                android:paddingTop="10dp"
+                android:hint="Enter your Name"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="horizontal"/>
+
+            <EditText
+                android:id="@+id/email_EdtTxt_Reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_txt_bg"
+                android:drawableLeft="@drawable/mail_drawable"
+                android:paddingStart="10dp"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/domine"
+                android:paddingTop="10dp"
+                android:hint="Enter your Email"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/pass_EdtTxt_Reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_txt_bg"
+                android:drawableLeft="@drawable/pass_back"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:inputType="textWebPassword"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/domine"
+                android:paddingTop="10dp"
+                android:hint="Enter your Password"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"/>
+            
+            <Button
+                android:id="@+id/submit_Btn_Reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Submit"
+                android:fontFamily="@font/domine"
+                android:textAllCaps="true"
+                android:textSize="20dp"/>
+            
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

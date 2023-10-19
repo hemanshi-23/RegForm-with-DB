@@ -67,11 +67,30 @@ public class DBHandler extends SQLiteOpenHelper {
 
             }
             while (cursor.moveToNext());
-
         }
-
         cursor.close();
         return modelClassArrayList;
+    }
+
+    public void updateCourse(String originalPersonName,String personName,String personEmail,String personPass)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(NAME_COL,personName);
+        contentValues.put(Email_Col,personEmail);
+        contentValues.put(Pass_COL,personPass);
+
+        db.update(Table_Name,contentValues,"name=?",new String[]{originalPersonName});
+        db.close();
+    }
+
+    public void delete(String personName)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        db.delete(Table_Name,"name=?",new String[]{personName});
+        db.close();
 
     }
 

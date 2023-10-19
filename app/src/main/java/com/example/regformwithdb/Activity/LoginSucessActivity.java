@@ -18,32 +18,38 @@ import com.example.regformwithdb.R;
 
 public class LoginSucessActivity extends AppCompatActivity {
 
-    Button LogoutBtn;
-
+    Button LogoutBtn,ShowDataBtn;
+ 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_sucess);
 
         LogoutBtn = findViewById(R.id.Logout_Btn);
+        ShowDataBtn = findViewById(R.id.ShowData_Btn);
         sharedpreferences = getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
 
         LogoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-               // isLogin = false;
                 Log.e("TAG", "onClick: login sucess "+ sharedpreferences.getBoolean("isLogin",false) );
                 sharedpreferences.edit().putBoolean("isLogin",false).apply();
-
-               /* SharedPreferences.Editor editor = sharedpreferences.edit();
-                editor.clear();
-                editor.apply();*/
 
                 Intent intent = new Intent(LoginSucessActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
 
+            }
+        });
+
+        ShowDataBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(LoginSucessActivity.this, ShowDataActivity.class);
+                startActivity(intent);
+               // finish();
             }
         });
     }
